@@ -5,9 +5,6 @@ import discord
 from utils import default
 from server import Client
 
-credentials = {"user": os.environ['DATABASE_USERNAME'], "password": os.environ['DATABASE_PASSWORD'],
-               "database": os.environ['DATABASE_NAME'], "host": os.environ['DATABASE_HOST']}
-
 intents = discord.Intents.all()
 
 client = Client(intents=intents,
