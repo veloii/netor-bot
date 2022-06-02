@@ -23,7 +23,7 @@ async def load_extensions(client: commands.Bot, path: str):
 
 async def init():
 
-    db = await asyncpg.create_pool(**credentials)
+    db = await asyncpg.create_pool(os.environ['DATABASE_URL'])
     client.db = db
 
     async with client:
