@@ -9,7 +9,7 @@ from api import api
 from dotenv import load_dotenv
 load_dotenv()
 
-PORT = int(os.environ["PORT"]) | 4000
+PORT = 80
 app = Quart(__name__)
 app.register_blueprint(api)
 
