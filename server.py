@@ -4,11 +4,12 @@ from discord.ext import commands
 import discord
 import asyncio
 from utils import setup
+import os
 from api import api
 from dotenv import load_dotenv
 load_dotenv()
 
-PORT = 4000
+PORT = os.environ["PORT"] | 80
 app = Quart(__name__)
 app.register_blueprint(api)
 
