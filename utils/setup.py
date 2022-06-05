@@ -2,7 +2,6 @@ import os
 from discord.ext import commands
 import asyncpg
 import discord
-from utils import default
 from server import Client
 
 intents = discord.Intents.all()

@@ -2,7 +2,6 @@ import discord
 from server import Client
 from db import create_config
 from discord import app_commands
-from utils import default
 import os
 
 async def setup(client: Client):

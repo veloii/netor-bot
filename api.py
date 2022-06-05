@@ -261,4 +261,3 @@ async def get_user(guild: str, user_id: str):
         return {"completed": True, "result": req}
     except Exception as e:
         return {"completed": False, "message": convert_error(e)}
-    
